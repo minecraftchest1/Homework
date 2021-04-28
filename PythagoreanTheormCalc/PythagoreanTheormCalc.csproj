@@ -6,4 +6,8 @@
     <PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MessageBox.Avalonia" Version="1.1.1" />
+  </ItemGroup>
+
 </Project>
