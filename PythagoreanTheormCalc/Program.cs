@@ -66,6 +66,7 @@ namespace PythagoreanTheormCalc
             /// <summary>
             /// See if SideAB = SideC
             /// </summary>
+            /*
             if (SideAB2 == SideC2)
             {
                 Console.WriteLine("SideAB^2 (" + SideAB2 + ") equals SideC^2 (" + SideC2 +")");
@@ -73,6 +74,27 @@ namespace PythagoreanTheormCalc
             else
             {
                 Console.WriteLine("SideAB^2 (" + SideAB2 + ") does not equal SideC^2 (" + SideC2 + ")");
+            }
+            */
+
+            switch (SideAB2)
+            {
+                case var expression when (SideAB2 > SideC2):
+                    Console.WriteLine("Side AB^2 (" + SideAB2 + ") > Side C^2 (" + SideC2 + ").");
+                    Console.WriteLine("The triangle is an Accute triangle.");
+                    break;
+                case var expression when (SideAB2 < SideC2):
+                    Console.WriteLine("Side AB^2 (" + SideAB2 + ") < Side C^2 (" + SideC2 + ").");
+                    Console.WriteLine("The triangle is an Obtuse triangle.");
+                    break;
+                case var expression when (SideAB2 == SideC2):
+                    Console.WriteLine("Side AB^2 (" + SideAB2 + ") = Side C^2 (" + SideC2 + ").");
+                    Console.WriteLine("The triangle is an Right triangle.");
+                    break;
+                default:
+                    Console.WriteLine("Oppse, Somthing went wrong.");
+                    Console.WriteLine("I do not know what kind of triangle you have.");
+                    break;
             }
         }
     }
