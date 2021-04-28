@@ -8,9 +8,6 @@ on:
 
 jobs:
   build:
-    on:
-      push: [main]
-      pull_request: [main] 
     runs-on: ubuntu-latest
 
     steps:
@@ -24,4 +21,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal  
