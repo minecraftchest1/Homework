@@ -19,11 +19,5 @@ namespace PythagoreanTheormCalcAvalonia
             AvaloniaXamlLoader.Load(this);
         }
 
-        public void btnSubmit_click()
-        {
-            var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager
-  .GetMessageBoxStandardWindow("title", "Submit button clicked.");
-            messageBoxStandardWindow.Show();
-        }
     }
 }
