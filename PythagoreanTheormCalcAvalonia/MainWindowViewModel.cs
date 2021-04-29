@@ -28,7 +28,9 @@ namespace PythagoreanTheormCalcAvalonia
 
         public void OnSubmit()
         {
-            
+            var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager
+                .GetMessageBoxStandardWindow("title", "Submit button clicked.");
+            messageBoxStandardWindow.Show();
         }
     }
 }
