@@ -26,11 +26,15 @@ namespace PythagoreanTheormCalcAvalonia
             set => this.RaiseAndSetIfChanged(ref _sideC, value);
         }
 
+        public string Result { get; set; } = "This is a test.";
+
         public void OnSubmit()
         {
             var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager
                 .GetMessageBoxStandardWindow("title", "Submit button clicked.");
             messageBoxStandardWindow.Show();
+
+            Result += "Submit Button Clicked.";
         }
     }
 }

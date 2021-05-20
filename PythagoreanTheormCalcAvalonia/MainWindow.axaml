@@ -23,5 +23,6 @@
       </StackPanel>
       <Button Command="{Binding OnSubmit}" Width="145" Content="Submit"/>
     </StackPanel>
+    <TextBlock Text="{Binding Result}" HorizontalAlignment="Center"/>
   </StackPanel>
 </Window>
