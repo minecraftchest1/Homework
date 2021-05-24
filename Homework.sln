@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PythagoreanTheormCalc", "PythagoreanTheormCalc\PythagoreanTheormCalc.csproj", "{D00F90FF-7C0E-4011-8DF6-876383E7ABE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythagoreanTheormCalcAvalonia", "PythagoreanTheormCalcAvalonia\PythagoreanTheormCalcAvalonia.csproj", "{9560BC81-9371-4D05-9163-43EDE888546A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PythagoreanTheormCalcAvalonia", "PythagoreanTheormCalcAvalonia\PythagoreanTheormCalcAvalonia.csproj", "{9560BC81-9371-4D05-9163-43EDE888546A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputTest", "InputTest\InputTest.csproj", "{7305C920-3A62-44CF-A181-9B63733F220E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTest", "..\EntityFrameworkTest1\EntityFrameworkTest\EntityFrameworkTest.csproj", "{95E84B84-A0E6-4194-ACF4-DD1F60EFAE3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{9560BC81-9371-4D05-9163-43EDE888546A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9560BC81-9371-4D05-9163-43EDE888546A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9560BC81-9371-4D05-9163-43EDE888546A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7305C920-3A62-44CF-A181-9B63733F220E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7305C920-3A62-44CF-A181-9B63733F220E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7305C920-3A62-44CF-A181-9B63733F220E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7305C920-3A62-44CF-A181-9B63733F220E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E84B84-A0E6-4194-ACF4-DD1F60EFAE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E84B84-A0E6-4194-ACF4-DD1F60EFAE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E84B84-A0E6-4194-ACF4-DD1F60EFAE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E84B84-A0E6-4194-ACF4-DD1F60EFAE3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

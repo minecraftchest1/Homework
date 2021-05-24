@@ -17,29 +17,29 @@ namespace Minecraftchest1
         }
         public static double InputDouble(string prompt)
         {
-            //Console.WriteLine("[DEBUG] Inside InputDouble");
+            Console.WriteLine("[DEBUG] Inside InputDouble");
             double inputD = 0;
             string inputS;
             inputS = Utils.Input(prompt);
 
-            //Console.Write(prompt);
+            Console.Write(prompt);
             try
             {
                 inputD = Convert.ToDouble(inputS);
-                //Console.WriteLine("[DEBUG] inside InputDouble try.");
+                Console.WriteLine("[DEBUG] inside InputDouble try.");
             }
             catch (FormatException)
             {
-                //Console.WriteLine("[DEBUG] Inside first catch.");
-                if (inputS.Length == 0)
+                Console.WriteLine("[DEBUG] Inside first catch.");
+                if (inputS == "\r\n")
                 {
-                    //Console.WriteLine("[DEBUG] Inside first catch if");
+                    Console.WriteLine("[DEBUG] Inside first catch if");
                     inputD = 0;
                     return inputD;
                 }
                 else
                 {
-                    //Console.WriteLine("[DEBUG] Inside first catch else");
+                    Console.WriteLine("[DEBUG] Inside first catch else");
                     InputErrorException ex = new InputErrorException($"Could not convert {inputS} to a Double.");
                     ex.Input = inputS;
                     throw ex;
@@ -47,10 +47,10 @@ namespace Minecraftchest1
             }
             catch(Exception e) 
             {
-                //Console.WriteLine("[DEBUG] Inside second catch");
+                Console.WriteLine("[DEBUG] Inside second catch");
                 throw;
             }
-            //Console.WriteLine("[DEBUG] Returing from InputDouble");
+            Console.WriteLine("[DEBUG] Returing from InputDouble");
             return inputD;
         }
 	}
