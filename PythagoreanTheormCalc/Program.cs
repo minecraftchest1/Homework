@@ -28,12 +28,18 @@ namespace PythagoreanTheormCalc
             /// </summary>
             try
             {
-                SideA = Convert.ToDouble(Utils.Input("Side A: "));
-                SideB = Convert.ToDouble(Utils.Input("Side B: "));
-                SideC = Convert.ToDouble(Utils.Input("Side C: "));
+             
+                SideA = Utils.InputDouble("Side A: ");
+                SideB = Utils.InputDouble("Side B: ");
+                SideC = Utils.InputDouble("Side C: ");
+            }
+            catch (InputErrorException e)
+            {
+                Console.WriteLine($"Sorry, I do not understand {e.Input}.");
             }
             catch (Exception e)
             {
+                //Console.WriteLine(e.ToString);
                 Console.WriteLine(e.Message);
                 //System.Environment.Exit(-1);
                 return;
