@@ -21,20 +21,26 @@ namespace Minecraftchest1
             string inputS;
             inputS = Utils.Input(prompt);
 
+            Console.WriteLine("[DEBUG] Inside InputDouble");
+
             Console.Write(prompt);
             try
             {
                 inputD = Convert.ToDouble(inputS);
+                Console.WriteLine("[DEBUG] inside InputDouble try.");
             }
             catch (FormatException)
             {
+                Console.WriteLine("[DEBUG] Inside first catch.");
                 if (inputS == null)
                 {
+                    Console.WriteLine("[DEBUG] Inside first catch if");
                     inputD = 0;
                     return inputD;
                 }
                 else
                 {
+                    Console.WriteLine("[DEBUG] Inside first catch else");
                     InputErrorException ex = new InputErrorException($"Could not convert {inputS} to a Double.");
                     ex.Input = inputS;
                     throw ex;
@@ -42,8 +48,10 @@ namespace Minecraftchest1
             }
             catch(Exception e) 
             {
+                Console.WriteLine("[DEBUG] Inside second catch");
                 throw;
             }
+            Console.WriteLine("[DEBUG] Returing from InputDouble");
             return inputD;
         }
 	}
