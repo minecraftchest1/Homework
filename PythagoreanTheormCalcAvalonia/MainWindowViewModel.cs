@@ -1,4 +1,7 @@
 using ReactiveUI;
+using System.ComponentModel;
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
 
 namespace PythagoreanTheormCalcAvalonia
 {
@@ -7,6 +10,8 @@ namespace PythagoreanTheormCalcAvalonia
         private double _sideA;
         private double _sideB;
         private double _sideC;
+
+        public Interaction<MainWindowViewModel, Window1ViewModel?> ShowDialog { get; }
 
         public double SideA
         {
@@ -30,11 +35,10 @@ namespace PythagoreanTheormCalcAvalonia
 
         public void OnSubmit()
         {
-            var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager
-                .GetMessageBoxStandardWindow("title", "Submit button clicked.");
-            messageBoxStandardWindow.Show();
-
-            Result += "Submit Button Clicked.";
+            var ResultWindow = new Window1();
+            ResultWindow.Title = "Pythagorean Theorm Calculator";
+            ResultWindow.Show();
+            //MainWindow.GotFocusEvent += ()
         }
     }
 }
