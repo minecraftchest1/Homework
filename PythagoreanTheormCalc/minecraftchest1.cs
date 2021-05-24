@@ -17,11 +17,10 @@ namespace Minecraftchest1
         }
         public static double InputDouble(string prompt)
         {
+            Console.WriteLine("[DEBUG] Inside InputDouble");
             double inputD = 0;
             string inputS;
             inputS = Utils.Input(prompt);
-
-            Console.WriteLine("[DEBUG] Inside InputDouble");
 
             Console.Write(prompt);
             try
